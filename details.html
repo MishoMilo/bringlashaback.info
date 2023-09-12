@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="details.css">
+<title>Details - Strike For Lasha</title>
+</head>
+<body>
+<div class="video-background">
+    <div class="video-foreground">
+        <video autoplay muted playsinline loop>
+            <source src="Untitled-1 (1).mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+<div class="details-page">
+    <button class="action-button" id="action-button">Join Us</button>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        setTimeout(() => {
+            document.getElementById('action-button').style.opacity = '1';
+        }, 29900);
+    });
+</script>
+</body>
+</html>
