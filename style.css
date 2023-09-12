@@ -22,6 +22,15 @@ body, html {
 }
 
 video {
-    width: 100%; 
-    height: auto;
+    width: auto; 
+    height: 100%;
+    max-width: none;
+}
+
+.loading-icon {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
 }

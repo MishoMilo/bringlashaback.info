@@ -22,8 +22,9 @@ body, html {
 }
 
 video {
-    width: 100%; 
-    height: auto;
+    width: auto; 
+    height: 100%;
+    max-width: none;
 }
 
 .details-page {
@@ -53,4 +54,12 @@ video {
     0% { background-color: #6200ea; }
     50% { background-color: #03dac6; }
     100% { background-color: #bb86fc; }
+}
+
+.loading-icon {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
 }

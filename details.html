@@ -8,6 +8,10 @@
 <title>Details - Strike For Lasha</title>
 </head>
 <body>
+
+<div class="loading-icon">
+    <img src="animation_lmgqznf0_small.gif" alt="Loading...">
+</div>
 <div class="video-background">
     <div class="video-foreground">
         <video autoplay muted playsinline loop>
@@ -23,6 +27,17 @@
         setTimeout(() => {
             document.getElementById('action-button').style.opacity = '1';
         }, 29900);
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const videoElement = document.querySelector('video');
+        const loadingIconElement = document.querySelector('.loading-icon');
+        
+        videoElement.addEventListener('canplaythrough', () => {
+            loadingIconElement.style.display = 'none';
+        });
     });
 </script>
 </body>

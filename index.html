@@ -7,6 +7,10 @@
 <title>Strike For Lasha</title>
 </head>
 <body>
+
+<div class="loading-icon">
+    <img src="animation_lmgqznf0_small.gif" alt="Loading...">
+</div>
 <div class="video-background">
     <div class="video-foreground">
         <video id="background-video" autoplay muted playsinline>
@@ -18,6 +22,17 @@
     document.getElementById('background-video').onended = function() {
         window.location.href = 'details.html';
     };
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const videoElement = document.querySelector('video');
+        const loadingIconElement = document.querySelector('.loading-icon');
+        
+        videoElement.addEventListener('canplaythrough', () => {
+            loadingIconElement.style.display = 'none';
+        });
+    });
 </script>
 </body>
 </html>
