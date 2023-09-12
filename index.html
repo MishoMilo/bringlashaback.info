@@ -9,15 +9,15 @@
 <body>
 <div class="video-background">
     <div class="video-foreground">
-        <video autoplay muted playsinline>
+        <video id="background-video" autoplay muted playsinline>
             <source src="Untitled.mp4" type="video/mp4">
         </video>
     </div>
 </div>
-<div class="home-page">
-    <div class="navigate">
-        <a href="details.html">Details</a>
-    </div>
-</div>
+<script>
+    document.getElementById('background-video').onended = function() {
+        window.location.href = 'details.html';
+    };
+</script>
 </body>
 </html>
