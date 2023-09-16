@@ -48,15 +48,15 @@ body, html {
 }
 
 .dark-box h1 {
-    font-size: 2em;
-    margin-bottom: 0.3em;
+    font-size: 3em;
+    margin-bottom: 0.2em;
 }
 
 .dark-box h2 {
-    font-size: 1.5em;
-    margin-bottom: 0.3em;
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
 }
 
 .dark-box h3 {
-    font-size: 1.2em;
+    font-size: 2em;
 }
