@@ -13,7 +13,7 @@ body, html {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: #4d4b4d; /* Setting the background color to fill any space left */
+    background-color: rgba(0, 0, 0, 0.5); /* Bringing back the opaque black layer */
 }
 
 .video-background video {
@@ -37,9 +37,9 @@ body, html {
 }
 
 .text-video {
-    width: 400px; /* Setting a fixed width */
-    height: 225px; /* Setting a fixed height */
-    border-radius: 25px;
+    width: 450px; /* Slightly increasing the size */
+    height: 253px; /* Slightly increasing the size */
+    border-radius: 25px; /* Adding back the rounded corners */
     margin: auto; /* Adding margin to ensure some space around the video */
     position: relative;
     z-index: 1; /* Ensuring the video stays on top */
