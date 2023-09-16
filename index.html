@@ -9,39 +9,63 @@
 <title>Strike For Lasha</title>
 </head>
 <body>
+<div class="loading-screen" id="loadingScreen">
+    <video autoplay muted loop>
+        <source src="loading_animation.mp4" type="video/mp4">
+    </video>
+</div>
 <div class="video-background">
-    <video autoplay muted>
+    <video autoplay muted id="backgroundVideo">
         <source src="Comp 1.mp4" type="video/mp4">
     </video>
 </div>
 <div class="content">
     <div class="text-video-container">
-        <video class="text-video" autoplay muted>
+        <video class="text-video" autoplay muted id="textVideo">
             <source src="Untitled (1).mp4" type="video/mp4">
         </video>
     </div>
 </div>
 <div class="timer" id="timer">5s</div>
 <script>
-    const textVideo = document.querySelector('.text-video');
+    const loadingScreen = document.getElementById('loadingScreen');
+    const backgroundVideo = document.getElementById('backgroundVideo');
+    const textVideo = document.getElementById('textVideo');
+    const timerDiv = document.getElementById('timer');
+
+    let assetsLoaded = 0;
+
+    // Function to handle the loading of assets
+    function assetLoaded() {
+        assetsLoaded += 1;
+        if (assetsLoaded === 2) {
+            loadingScreen.style.display = 'none';
+            startTimer();
+        }
+    }
+
+    backgroundVideo.addEventListener('loadeddata', assetLoaded);
+    textVideo.addEventListener('loadeddata', assetLoaded);
     textVideo.addEventListener('ended', () => {
         textVideo.style.display = 'none';
     });
 
-    let timeLeft = 5;
-    const timerDiv = document.getElementById('timer');
-    timerDiv.textContent = timeLeft + 's';  // Setting initial value
+    // Function to start the 5-second countdown timer
+    function startTimer() {
+        let timeLeft = 5;
+        timerDiv.textContent = timeLeft + 's';  // Setting initial value
 
-    const timerInterval = setInterval(() => {
-        timeLeft -= 1;
-        if (timeLeft >= 0) {
-            timerDiv.textContent = timeLeft + 's';
-        }
-        if (timeLeft <= 0) {
-            clearInterval(timerInterval);
-            timerDiv.style.display = 'none';
-        }
-    }, 1000);
+        const timerInterval = setInterval(() => {
+            timeLeft -= 1;
+            if (timeLeft >= 0) {
+                timerDiv.textContent = timeLeft + 's';
+            }
+            if (timeLeft <= 0) {
+                clearInterval(timerInterval);
+                timerDiv.style.display = 'none';
+            }
+        }, 1000);
+    }
 </script>
 </body>
 </html>
