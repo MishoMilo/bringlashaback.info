@@ -37,8 +37,8 @@ body, html {
 }
 
 .text-video {
-    width: 50%; /* Adjusting the size to be medium */
-    max-width: 80%; /* Setting a maximum width to ensure it stays within the borders of the background video */
+    width: 400px; /* Setting a fixed width */
+    height: 225px; /* Setting a fixed height */
     border-radius: 25px;
     margin: auto; /* Adding margin to ensure some space around the video */
     position: relative;
