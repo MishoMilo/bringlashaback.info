@@ -15,10 +15,32 @@
 </div>
 <div class="content">
     <div class="text-video-container">
-        <video class="text-video" autoplay muted loop>
+        <video class="text-video" autoplay muted>
             <source src="Untitled (1).mp4" type="video/mp4">
         </video>
     </div>
 </div>
+<script>
+    const textVideo = document.querySelector('.text-video');
+    textVideo.addEventListener('ended', () => {
+        textVideo.style.display = 'none';
+    });
+
+    // Function to add a timer that starts when the page loads
+    const startTime = Date.now();
+    const timerDiv = document.createElement('div');
+    timerDiv.style.position = 'absolute';
+    timerDiv.style.top = '10px';
+    timerDiv.style.right = '10px';
+    timerDiv.style.fontSize = '2em';
+    timerDiv.style.color = 'white';
+    document.body.appendChild(timerDiv);
+
+    setInterval(() => {
+        const elapsedTime = Date.now() - startTime;
+        const seconds = Math.floor(elapsedTime / 1000);
+        timerDiv.textContent = `${seconds}s`;
+    }, 1000);
+</script>
 </body>
 </html>
