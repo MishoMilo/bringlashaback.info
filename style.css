@@ -37,9 +37,8 @@ body, html {
 }
 
 .text-video-container {
-    width: 450px; /* Slightly increasing the size */
-    height: 253px; /* Slightly increasing the size */
-    border-radius: 25px; /* Adding back the rounded corners */
+    width: 540px; /* Increasing the width by about 20% */
+    height: 304px; /* Increasing the height by about 20% */
     overflow: hidden; /* Ensuring the border-radius applies correctly */
     margin: auto; /* Adding margin to ensure some space around the video */
     position: relative;
