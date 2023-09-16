@@ -51,21 +51,11 @@ body, html {
 }
 
 .timer {
-    position: absolute;
-    bottom: 20px;
+    position: fixed;
+    bottom: 30%; /* Positioning the timer 30% from the bottom of the page */
     left: 50%;
     transform: translateX(-50%);
-    font-size: 2em;
-    color: white;
-    font-family: 'Patrick Hand', cursive; /* Setting a "cute" rounded font */
-}
-
-.timer {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: 'Patrick Hand', cursive; /* Using the rounded, "cute" font */
+    font-family: 'Patrick Hand', cursive; /* Using a rounded, "cute" font */
     font-size: 2em;
     color: white;
     background-color: rgba(0, 0, 0, 0.5); /* Giving the timer a slightly opaque background for better visibility */
