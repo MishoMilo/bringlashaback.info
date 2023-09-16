@@ -13,6 +13,7 @@ body, html {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5); /* Adding opaque layer */
 }
 
 .video-background video {
@@ -37,5 +38,5 @@ body, html {
 
 .text-video {
     width: 70%; /* Adjust the width as necessary to get the desired size on various devices */
-    border-radius: 15px; /* Optional: to give rounded corners */
+    border-radius: 25px; /* Increasing the border radius to give more rounded corners */
 }
