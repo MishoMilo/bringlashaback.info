@@ -37,6 +37,6 @@ body, html {
 }
 
 .text-video {
-    width: 50%; /* Adjusting the size to be medium */
+    width: 25%; /* Adjusting the size to be medium */
     border-radius: 25px; /* Keeping the rounded corners */
 }
