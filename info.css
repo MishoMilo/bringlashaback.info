@@ -30,3 +30,22 @@ body, html {
 }
 
 /* Additional CSS rules can be added below */
+
+.text-part1, .text-part2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.text-part2 {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 5s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
