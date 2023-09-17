@@ -1,51 +1,30 @@
 
 body, html {
-  height: 100%;
-  margin: 0;
-  font-family: 'Courier New', Courier, monospace; /* Changing the font to a more "sad" style */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
-.img-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-image: url('Backround for Info Page .png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.background {
+    background-image: url('Backround for Info Page .png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
 }
 
-.main-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 60%; /* Setting a max width to allow the width to be determined by the text content */
-  text-align: center;
-  font-size: 1.5em;
-  color: #ffffff; /* Making text color white to compliment the background */
-  background-color: rgba(0, 0, 0, 0.6); /* Adding a semi-transparent black background to the text */
-  padding: 20px;
-  border-radius: 15px; /* Adding rounded corners to the text background */
-}
-
-/* Additional CSS rules can be added below */
-
-.text-part1, .text-part2 {
+.text {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
+    max-width: 600px;
     text-align: center;
-}
-
-.text-part2 {
-    opacity: 0;
-    animation: fadeIn 1s forwards;
-    animation-delay: 5s;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
+    color: white;
 }

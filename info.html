@@ -5,14 +5,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="info.css">
-<title>Info - Strike For Lasha</title>
+<title>Info</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+</style>
 </head>
 <body>
-<div class="img-container">
-    <!-- Main text section -->
-    <div class="main-text">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<div class="background">
+    <div id="text1" class="text">
+        As the school year began, we all came to a somber realization: how deeply we miss our beloved school member, Lasha. Walking into school without being greeted by his happy and protective presence has cast a shadow on our spirits. His absence has left a void, reminding us each day of the significant loss we have endured. The entire school wishes him a future filled with happiness and good health. We miss you, Lasha.
+    </div>
+    <div id="text2" class="text" style="display:none">
+        This website was created to symbolize our wish to bring him back (DISCLAIMER: this is not real, and voting here won’t change anything). Yet, if you want to express your sentiment and share in this collective expression of longing, cast your vote here.
     </div>
 </div>
+<script>
+    setTimeout(function(){
+        document.getElementById('text1').style.display='none';
+        document.getElementById('text2').style.display='block';
+    }, 5000);
+</script>
 </body>
 </html>
