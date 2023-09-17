@@ -5,13 +5,7 @@ body, html {
   font-family: 'Lato', sans-serif;
   display: grid;
   place-items: center;
-  background: linear-gradient(
-    45deg,
-    rgb(113, 122, 119) 25%,
-    rgb(7, 4, 6) 25% 50%,
-    rgb(5, 7, 7) 50% 75%,
-    rgb(26, 27, 27) 75%
-  );
+  background: linear-gradient(45deg, #0b3d91 25%, #c7d3d4 25% 50%, #1b1b2f 50% 75%, #0e7a8a 75%);
 }
 
 .img-container {
