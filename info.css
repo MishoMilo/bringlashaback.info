@@ -1,46 +1,55 @@
 
 @font-face {
-    font-family: 'Roboto-Regular';
+    font-family: 'Roboto';
     src: url('Roboto-Regular.ttf');
 }
 
-body {
+body, html {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #1a1a1a;
-    color: white;
-    font-family: 'Roboto-Regular', sans-serif;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.background {
     background-image: url('Backround for Info Page .png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-}
-
-.text {
-    position: relative;
-    width: 50vw;
-    height: 50vw;
-    max-width: 50vh;
-    max-height: 50vh;
-    text-align: center;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    font-size: 2em;
+    align-items: center;
 }
 
-#navigation {
-    position: relative;
+.content {
     text-align: center;
-    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 20px;
 }
 
-#navigation img {
-    margin: 0 15px;
-    width: 40px;
-    cursor: pointer;
+.text-part1, .text-part2 {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.text-part1 {
+    display: block;
+}
+
+.arrows {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.arrows img {
+    width: 50px;
+    height: 50px;
 }
