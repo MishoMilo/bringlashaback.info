@@ -1,4 +1,9 @@
 
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('Roboto-Regular.ttf');
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -27,3 +32,24 @@ body {
     display: none;
 }
 
+
+#text-box {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* 1:1 Aspect Ratio */
+    text-align: center;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 2em;
+}
+
+#navigation {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#navigation img {
+    margin: 0 15px;
+    width: 40px;
+    cursor: pointer;
+}
