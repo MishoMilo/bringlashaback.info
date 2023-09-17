@@ -5,24 +5,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="info.css">
-<title>Info</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-</style>
 </head>
 <body>
-<div class="background">
-    <div id="text1" class="text">
-        As the school year began, we all came to a somber realization: how deeply we miss our beloved school member, Lasha. Walking into school without being greeted by his happy and protective presence has cast a shadow on our spirits. His absence has left a void, reminding us each day of the significant loss we have endured. The entire school wishes him a future filled with happiness and good health. We miss you, Lasha.
+<div class="text">
+    <div id="text1">
+        As the school year begins anew, we find ourselves grappling with the absence of our cherished colleague, Lasha. The halls seem a little quieter, the days a bit duller. His spirit, once a beacon of light and joy in our community, now lingers only in our memories. We miss the warmth of his presence, his infectious laughter, and the kind, protective gaze that made us all feel safe and seen.
     </div>
-    <div id="text2" class="text" style="display:none">
-        This website was created to symbolize our wish to bring him back (DISCLAIMER: this is not real, and voting here won’t change anything). Yet, if you want to express your sentiment and share in this collective expression of longing, cast your vote here.
+    <div id="text2" style="display: none;">
+        It is said that when people part ways, it is the love and the fond memories that keep them together in spirit. As we navigate this Lasha-less world, we hold onto the hope that our paths will cross again. Until then, dear Lasha, may you find success and happiness in your new endeavor. Your spirit remains with us, lighting our way and warming our hearts. You are missed more than words can express. <br> <br>
+        This website is a humble attempt to express our deep affection and longing for you. Though it may not bring you back (DISCLAIMER: This website cannot actually bring people back), it is a place for us to come together, share our memories, and keep your spirit alive in our hearts. If you wish to join us in this virtual embrace, cast your vote and let's bring Lasha back, if only in spirit.
     </div>
 </div>
+<div id="navigation">
+    <img src="arrow_back_FILL0_wght400_GRAD0_opsz24.svg" alt="Previous">
+    <img src="arrow_forward_FILL0_wght400_GRAD0_opsz24.svg" alt="Next">
+</div>
 <script>
-    setTimeout(function(){
-        document.getElementById('text1').style.display='none';
-        document.getElementById('text2').style.display='block';
+    let text1 = document.getElementById('text1');
+    let text2 = document.getElementById('text2');
+
+    setTimeout(() => {
+        text1.style.display = 'none';
+        text2.style.display = 'block';
     }, 5000);
 </script>
 </body>
